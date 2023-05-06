@@ -1,22 +1,49 @@
-.header{
-  margin: 0;
-  padding: 0;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+
+
+.header-menu {
+
+  border-bottom: 3px solid #d10024 !important;
 }
-.topo-nav-links{
+
+.header-container {}
+
+.topo-nav-links {
   padding: 3px;
   background-color: #1e1f29;
- 
+
   height: 40px;
-  
+
 }
-.nav-links{
+
+.nav-links {
   text-decoration: none;
   color: #f1f1f1;
   font-size: 12px;
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
- 
+
 }
-.header-menu{
+
+.header-menu {
   background-color: #15161d;
+}
+
+.search-bar {
+  height: 40px;
+  align-self: center;
+}
+
+
+.a {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  z-index: 1;
+  background-color: red;
+ 
+  opacity: 0.5;
+  clip-path: polygon(0 0, 100% 0, 30% 100%, 0% 100%);
+
 }
