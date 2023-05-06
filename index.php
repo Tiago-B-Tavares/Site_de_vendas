@@ -11,17 +11,20 @@ $con = new conexao();
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="css/bootstrap.css">
+  <title>Venda Fácil | Inicio</title>
+  <link rel="stylesheet" href="view/css/bootstrap.css">
   <link rel="stylesheet" href="view/js/bootstrap.min.js">
+  <link rel="stylesheet" href="view/css/app.css">
+  <!-- Adiciona o Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
 
 </head>
 
 <body>
 
-  <header class=" navbar-expand-lg  container-fluid navbar-custom ">
-
+  <header class="header-menu px-0 container-fluid navbar-expand-lg   navbar-custom ">
+    <?php include("view/includes/topo.php") ?>
     <?php include("view/includes/menu.php") ?>
 
 

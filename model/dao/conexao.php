@@ -12,7 +12,6 @@ class conexao
         $this->pass = "";
         $this->dba = "db_venda_facil";
         self::connect();
-        echo "conectado!";
         
         
     }

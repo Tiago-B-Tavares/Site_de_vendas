@@ -1,4 +1,5 @@
-create database db_venda_facil
+CREATE DATABASE db_venda_facil;
+
 CREATE TABLE tb_produto (
   id int(255) AUTO_INCREMENT,
   descricao text,
@@ -7,17 +8,19 @@ CREATE TABLE tb_produto (
   status_prod tinyint(1),
   PRIMARY KEY (id)
 );
-create TABLE venda(
+
+CREATE TABLE tb_venda (
   id int(255) AUTO_INCREMENT,
   desc_venda text,
   data_venda date,
   status_venda tinyint(1),
   PRIMARY KEY(id)
 );
+
 CREATE TABLE tb_item_venda(
 	id int(255) PRIMARY KEY AUTO_INCREMENT,
     id_venda int(255),
     id_produto int(255),
-   	CONSTRAINT fk_produto FOREIGN KEY (id_produto) REFERENCES  tb_produto (id),
+    CONSTRAINT fk_produto FOREIGN KEY (id_produto) REFERENCES  tb_produto (id),
 	CONSTRAINT fk_venda FOREIGN KEY (id_venda) REFERENCES  tb_venda (id)
 );
